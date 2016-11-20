@@ -1,7 +1,9 @@
 # TestCellBlockCycleRetain
 A block of UITableViewCell can easily leads to a retain-cycle
-[[iOS] [OC] 容易忽略的cell回调block循环引用](http://www.jianshu.com/p/b33e5989a352)
 see article at 
+
+[[iOS] [OC] 容易忽略的cell回调block循环引用](http://www.jianshu.com/p/b33e5989a352)
+
 
 ## 循环引用简介
 在`Objective-C`的开发中循环引用(`retain cycle`)是指两个（或多个）对象之间产生了互相强引用而导致这些对象因为引用计数(`reference count`)始终大于等于1而不会释放，最后导致内存泄漏(`memory leak`)的状况，可以用下图描述。
